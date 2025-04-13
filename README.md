@@ -89,7 +89,7 @@ const api = require('./api')
 
 // update the route handlers
 app.get('/', api.handleRoot)
-app.get('/products', api.listProducts)
+c
 ```
 
 4. Next, let's modularize the products as well. Let's create a service module that will handle all of our products interaction. Create a new file called `products.js`
@@ -197,7 +197,7 @@ Review this in the browser, you should be able to visit `/products?limit=1&offse
 
 // ...
 
-app.get('/products/:id', api.getProduct)
+
 ```
 
 Now, let's add the `getProduct()` method to our `api.js` module:
@@ -269,7 +269,7 @@ Don't forget to update the `module.exports` object in the `products.js` file to 
 ```js
 // app.js
 // Require the middleware module
-const middleware = require('middleware')
+()
 
 // Register our upcoming middleware
 app.use(middleware.cors)
